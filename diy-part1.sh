@@ -9,6 +9,8 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
+#常用OpenWrt软件包源码合集
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
