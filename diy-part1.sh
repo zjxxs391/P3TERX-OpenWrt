@@ -17,8 +17,7 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-#修改默认IP地址
-sed -i 's/192.168.1.1/192.168.1.31/g' package/base-files/files/bin/config_generate
+
 
 #增加主题
 echo "CONFIG_PACKAGE_luci-theme-$OWRT_THEME=y" >> .config
